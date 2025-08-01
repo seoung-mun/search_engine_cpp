@@ -1,0 +1,3 @@
+Efficient memory management in C++ involves using smart pointers.
+Smart pointers help prevent memory leaks by automatically managing the lifetime of dynamically allocated objects.
+This feature is a modern C++ best practice.

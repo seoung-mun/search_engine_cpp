@@ -1,0 +1,3 @@
+The project requires a solid understanding of C++ memory management.
+Object-oriented programming concepts like classes and objects are fundamental.
+We will build an inverted index to efficiently search for keywords.
