@@ -16,7 +16,12 @@ public:
 
     std::set<std::string> search(const std::string& query);
     // 검색어를 받아서 해당하는 문서 경로 집합을 반환하는 함수
+    void index_document(const std::string& file_path);
+    // 단일 문서를 인덱싱하는 함수
+    void index_files(const std::vector<std::string>& file_paths);
+    // 여러 파일을 인덱싱하는 함수
 
+    
 private:
     std::map<std::string, std::set<std::string>> inverted_index;
     // 역색인: 단어 -> 해당 단어가 포함된 문서 경로 집합

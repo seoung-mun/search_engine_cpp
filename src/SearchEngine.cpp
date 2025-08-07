@@ -4,6 +4,9 @@
 #include <sstream>
 #include <algorithm>
 #include <cctype> 
+#include <filesystem>
+
+namespace fs =std::filesystem;
 
 // 생성자
 SearchEngine::SearchEngine() {}
@@ -27,7 +30,11 @@ std::set<std::string> SearchEngine::search(const std::string& query) {
         return {}; // 결과가 없으면 빈 집합(set) 반환
     }
 }
-
+void SearchEngine::index_files(const std::vector<std::string>& file_paths) {
+    for (const std::string& path : file_paths) {
+        index_single_file(path);
+    }
+}
 
 std::vector<std::string> SearchEngine::tokenize(const std::string& text) {
     std::vector<std::string> tokens;

@@ -14,6 +14,8 @@ main         # Common executable name
 # VS Code 관련 설정 파일
 .vscode/launch.json
 .vscode/tasks.json
+.vscode/c_cpp_properties.json
 
 # Build 폴더
 build/
+
